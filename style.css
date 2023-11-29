@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+.title{
+    border: 1px solid #000;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: block;
+    color: red;
+    font-style: italic;
+    font-size: 11px;
+}
+=======
 p {width: 100px;
     height: 100px;}
 
@@ -11,3 +23,4 @@ ul li {
     font-size: 16px;
     color: #ccc111;
 }
+>>>>>>> 5c97fc8b8ee6fff232c3df965c044b52fa4ee38b
