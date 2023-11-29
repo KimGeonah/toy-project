@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 10px;
+}
+
+.header {
+  background-color: rgb(201, 198, 198);
+  position: relative;
+}
+.header .title {
+  border: 1px solid #000;
+  text-align: center;
+  font-family: "Prata", serif;
+  color: #CC6262;
+  font-weight: 100;
+}
+.header .navbar_burger {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.search_box {
+  border: 1px solid #000;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
