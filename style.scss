@@ -7,7 +7,42 @@ li {list-style: none;}
 a {text-decoration: none;
     color: #000;}
 /* -------------------- */
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+body{
+    margin: 10px;
+}
 
+$point-color :#CC6262;
+$point-font : 'Prata', serif;
+
+
+.header{
+    background-color: rgb(201, 198, 198);
+    position: relative;
+    .title{
+        border: 1px solid #000;
+        text-align: center;
+        font-family: $point-font;
+        color: $point-color;
+        font-weight: 100;
+    }
+
+    .navbar_burger{
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+}
+
+.search_box{
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 .top_box {
     width: 100%;
@@ -113,3 +148,5 @@ a {text-decoration: none;
         }
     }
 }
+
+
