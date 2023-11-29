@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* -------------------- */
+.top_box {
+  width: 100%;
+  height: 100px;
+  background-color: #aaa;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.bottom_box {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  padding: 0px 15px 15px 0px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+}
+.bottom_box .line {
+  width: 460px;
+  margin: 0 auto;
+  height: 3px;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
+.bottom_box .title_all {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 450px;
+  height: 50px;
+  line-height: 55px;
+  padding-left: 10px;
+  background-color: yellow;
+}
+.bottom_box .short_list {
+  margin-top: 50px;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.bottom_box .short_list img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bottom_box .short_list .short_txt {
+  font-weight: bold;
+}
+.bottom_box .Person_Issue {
+  position: relative;
+  width: 100%;
+}
+.bottom_box .Person_Issue .Person_Issue_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-top: 50px;
+}
+.bottom_box .Person_Issue .Person_Issue_img .Person_Issue_img_box {
+  width: 40%;
+}
+.bottom_box .Person_Issue .Person_Issue_img .Person_Issue_img_box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bottom_box .Person_Issue .Person_Issue_img .Person_Issue_text {
+  width: 60%;
+  height: 255px;
+  background-color: #eee;
+}
+.bottom_box .Person_Issue .Person_Issue_img .Person_Issue_text .Issue_text_list {
+  display: flex;
+  padding: 10px;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.bottom_box .Person_Issue .Person_Issue_img .Person_Issue_text .Issue_text_list li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
