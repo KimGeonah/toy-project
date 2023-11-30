@@ -1,5 +1,12 @@
+$point-color :#CC6262;
+$icon-color : #978D8D;
+
+$point-font : 'Prata', serif;
+$base-font : 'Vazirmatn', sans-serif;
+
 * {padding: 0;
     margin: 0;
+    font-family: $base-font;
 }
 
 body{ margin: auto 10px;}
@@ -7,11 +14,7 @@ li {list-style: none; cursor: pointer;}
 a {text-decoration: none; cursor: pointer; color: #000;}
 
     
-$point-color :#CC6262;
-$icon-color : #978D8D;
 
-$point-font : 'Prata', serif;
-$base-font : 'Vazirmatn', sans-serif;
     
 
 ///////////////////////////////////////////////////////////////
@@ -172,7 +175,6 @@ $base-font : 'Vazirmatn', sans-serif;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 1px solid #aaa;
 
     .line {
         width: 95%;
@@ -193,7 +195,6 @@ $base-font : 'Vazirmatn', sans-serif;
         height: 50px;
         line-height: 55px;
         padding: 0px 10px 0px;
-        background-color: yellow;
         box-sizing: border-box;
         font-family: $base-font;
     }
@@ -274,7 +275,6 @@ $base-font : 'Vazirmatn', sans-serif;
             .Person_Issue_text {
                 position: relative;
                 width: 60%;
-                background-color: #eee;
 
                 .Issue_text_list {
                     display: flex;
@@ -372,6 +372,7 @@ $base-font : 'Vazirmatn', sans-serif;
                 height: 40px;
                 background-color: red;
                 overflow: hidden;
+                border-radius: 3px;
 
                 img {
                     width: 100%;
@@ -391,6 +392,7 @@ $base-font : 'Vazirmatn', sans-serif;
         }
 
         .user_txt {
+            height: 130px;
             padding: 10px 0px;
             box-sizing: border-box;
             font-weight: bold;
@@ -456,9 +458,13 @@ $base-font : 'Vazirmatn', sans-serif;
             display: flex;
             align-items: center;
             font-weight: bold;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
 
 
             .fa-chevron-circle-right {
+                width: 20px;
                 color: $point-color;
                 margin-left: 10px;
             }
@@ -473,8 +479,14 @@ $base-font : 'Vazirmatn', sans-serif;
             padding: 0px 10px;
             box-sizing: border-box;
             color: #aaa;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             }
 
+            p:nth-child(1) {
+                padding-left: 0px;
+            }
             p:nth-child(2) {
                 color: #777;
                 font-weight: bold;
@@ -512,6 +524,7 @@ $base-font : 'Vazirmatn', sans-serif;
             p { 
                 width: 50%;
                 font-weight: bold;
+                cursor: pointer;
             }
             p:nth-child(2) {
                 color: #777;
@@ -701,6 +714,9 @@ footer {
                 height: 35px;
                 box-sizing: border-box;
                 border-bottom: 1px solid #eee;
+                padding: 0px 3px;
+                box-sizing: border-box;
+
                 
                 a:hover {
                     color: $point-color;

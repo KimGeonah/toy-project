@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Vazirmatn", sans-serif;
 }
 
 body {
@@ -146,7 +147,6 @@ a {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  border: 1px solid #aaa;
 }
 .bottom_box .line {
   width: 95%;
@@ -166,7 +166,6 @@ a {
   height: 50px;
   line-height: 55px;
   padding: 0px 10px 0px;
-  background-color: yellow;
   box-sizing: border-box;
   font-family: "Vazirmatn", sans-serif;
 }
@@ -240,7 +239,6 @@ a {
 .bottom_box .Person_Issue .Person_Issue_img .Person_Issue_text {
   position: relative;
   width: 60%;
-  background-color: #eee;
 }
 .bottom_box .Person_Issue .Person_Issue_img .Person_Issue_text .Issue_text_list {
   display: flex;
@@ -328,6 +326,7 @@ a {
   height: 40px;
   background-color: red;
   overflow: hidden;
+  border-radius: 3px;
 }
 .bottom_box .user_aera1 .user_aera_top .user_aera_img img,
 .bottom_box .user_aera2 .user_aera_top .user_aera_img img {
@@ -349,6 +348,7 @@ a {
 }
 .bottom_box .user_aera1 .user_txt,
 .bottom_box .user_aera2 .user_txt {
+  height: 130px;
   padding: 10px 0px;
   box-sizing: border-box;
   font-weight: bold;
@@ -423,8 +423,12 @@ a {
   display: flex;
   align-items: center;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .bottom_box .More_Reactions .More_Reactions_tit .fa-chevron-circle-right {
+  width: 20px;
   color: #CC6262;
   margin-left: 10px;
 }
@@ -437,6 +441,12 @@ a {
   padding: 0px 10px;
   box-sizing: border-box;
   color: #aaa;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bottom_box .More_Reactions .More_Reactions_side_tit p:nth-child(1) {
+  padding-left: 0px;
 }
 .bottom_box .More_Reactions .More_Reactions_side_tit p:nth-child(2) {
   color: #777;
@@ -469,6 +479,7 @@ a {
 .bottom_box .More_Reactions_Tap .Reactions_Tap_Menu p {
   width: 50%;
   font-weight: bold;
+  cursor: pointer;
 }
 .bottom_box .More_Reactions_Tap .Reactions_Tap_Menu p:nth-child(2) {
   color: #777;
@@ -634,6 +645,8 @@ footer .footer_list .footer_list_box li {
   height: 35px;
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
+  padding: 0px 3px;
+  box-sizing: border-box;
 }
 footer .footer_list .footer_list_box li a:hover {
   color: #CC6262;
