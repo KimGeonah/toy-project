@@ -122,6 +122,7 @@ body {
   align-content: flex-end;
   padding-top: 50px;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 .bottom_box .short_list .short_list_img1, .bottom_box .short_list .short_list_img2,
 .bottom_box .short_list .short_list_img3, .bottom_box .short_list .short_list_img4 {
@@ -143,6 +144,9 @@ body {
 .bottom_box .short_list .short_list_img2, .bottom_box .short_list .short_list_img4 {
   padding-left: 5px;
 }
+.bottom_box .short_list .short_list_tit {
+  top: 23px;
+}
 .bottom_box .short_list .short_txt {
   font-weight: bold;
   display: block;
@@ -155,6 +159,8 @@ body {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .bottom_box .Person_Issue .Person_Issue_img {
   display: flex;
@@ -215,6 +221,8 @@ body {
   padding: 10px;
   box-sizing: border-box;
   transform: translateY();
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .bottom_box .Person_Year .Person_Year_img {
   cursor: pointer;
@@ -236,12 +244,14 @@ body {
   text-overflow: ellipsis;
   cursor: pointer;
 }
-.bottom_box .user_aera1 {
+.bottom_box .user_aera1,
+.bottom_box .user_aera2 {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-.bottom_box .user_aera1 .user_aera_top {
+.bottom_box .user_aera1 .user_aera_top,
+.bottom_box .user_aera2 .user_aera_top {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -251,21 +261,33 @@ body {
   padding: 5px 0px;
   box-sizing: border-box;
 }
-.bottom_box .user_aera1 .user_aera_top .user_aera_img {
+.bottom_box .user_aera1 .user_aera_top .user_aera_img,
+.bottom_box .user_aera2 .user_aera_top .user_aera_img {
   width: 60px;
   height: 40px;
   background-color: red;
+  overflow: hidden;
 }
-.bottom_box .user_aera1 .user_aera_top .user_name, .bottom_box .user_aera1 .user_aera_top .user_ID {
+.bottom_box .user_aera1 .user_aera_top .user_aera_img img,
+.bottom_box .user_aera2 .user_aera_top .user_aera_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bottom_box .user_aera1 .user_aera_top .user_name, .bottom_box .user_aera1 .user_aera_top .user_ID,
+.bottom_box .user_aera2 .user_aera_top .user_name,
+.bottom_box .user_aera2 .user_aera_top .user_ID {
   height: 20px;
   margin-left: 15px;
   font-size: 12px;
   line-height: 20px;
 }
-.bottom_box .user_aera1 .user_aera_top .user_ID {
+.bottom_box .user_aera1 .user_aera_top .user_ID,
+.bottom_box .user_aera2 .user_aera_top .user_ID {
   color: #aaa;
 }
-.bottom_box .user_aera1 .user_txt {
+.bottom_box .user_aera1 .user_txt,
+.bottom_box .user_aera2 .user_txt {
   padding: 10px 0px;
   box-sizing: border-box;
   font-weight: bold;
@@ -275,7 +297,8 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bottom_box .user_aera1 .user_aera_btm {
+.bottom_box .user_aera1 .user_aera_btm,
+.bottom_box .user_aera2 .user_aera_btm {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -286,26 +309,139 @@ body {
   margin-bottom: 15px;
 }
 .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1,
-.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 {
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box1,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box2 {
   display: flex;
   height: 50px;
   line-height: 53px;
 }
 .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 div, .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 a,
 .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 div,
-.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 a {
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 a,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box1 div,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box1 a,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box2 div,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box2 a {
   color: #aaa;
   padding: 0px 5px;
   box-sizing: border-box;
 }
 .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 .btm_twiter_img,
-.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 .btm_twiter_img {
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 .btm_twiter_img,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box1 .btm_twiter_img,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box2 .btm_twiter_img {
   font-size: 16px;
 }
 .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 .btm_time,
-.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 .btm_time {
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 .btm_time,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box1 .btm_time,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box2 .btm_time {
   font-size: 12px;
 }
-.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 a {
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 a,
+.bottom_box .user_aera2 .user_aera_btm .user_aera_btm_Box2 a {
   padding: 0px 10px;
+}
+.bottom_box .user_aera1 {
+  margin-top: 20px;
+}
+.bottom_box .user_aera2 {
+  margin-bottom: 50px;
+}
+.bottom_box .More_Reactions {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.bottom_box .More_Reactions .More_Reactions_tit {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.bottom_box .More_Reactions .More_Reactions_tit .fa-chevron-circle-right {
+  color: #CC6262;
+  margin-left: 10px;
+}
+.bottom_box .More_Reactions .More_Reactions_side_tit {
+  display: flex;
+  align-items: center;
+}
+.bottom_box .More_Reactions .More_Reactions_side_tit p {
+  font-size: 12px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  color: #aaa;
+}
+.bottom_box .More_Reactions .More_Reactions_side_tit p:nth-child(2) {
+  color: #777;
+  font-weight: bold;
+}
+.bottom_box .More_Reactions_Tap {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_Menu {
+  position: absolute;
+  z-index: 1;
+  top: 10.6px;
+  left: 10px;
+  display: flex;
+  width: 250px;
+  height: 51px;
+  line-height: 53px;
+  text-align: center;
+  background-color: #eee;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_Menu p {
+  width: 50%;
+  font-weight: bold;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_Menu p:nth-child(2) {
+  color: #777;
+  background-color: #bbb;
+}
+.bottom_box .More_Reactions_Tap .Tap_list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 50px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_list2 {
+  display: none;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_list1 li a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 50px;
+  font-size: 14px;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_list1 li a p:first-child {
+  width: 40px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #eee;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bottom_box .More_Reactions_Tap .Reactions_Tap_list1 li a p:last-child {
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */

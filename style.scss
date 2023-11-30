@@ -143,6 +143,7 @@ a {text-decoration: none;
         align-content: flex-end;
         padding-top: 50px;
         box-sizing: border-box;
+        margin-top: 20px;
 
         .short_list_img1, .short_list_img2,
         .short_list_img3, .short_list_img4 {
@@ -165,6 +166,10 @@ a {text-decoration: none;
             padding-left: 5px;
         }
 
+        .short_list_tit {
+            top: 23px;
+        }
+
 
         .short_txt {
             font-weight: bold;
@@ -180,6 +185,8 @@ a {text-decoration: none;
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-top: 20px;
 
         .Person_Issue_img {
             display: flex;
@@ -250,6 +257,8 @@ a {text-decoration: none;
         padding: 10px;
         box-sizing: border-box;
         transform: translateY();
+        margin-bottom: 20px;
+        margin-top: 20px;
 
         .Person_Year_img {
             cursor: pointer;
@@ -275,7 +284,8 @@ a {text-decoration: none;
         }
     }
 
-    .user_aera1{
+    .user_aera1,
+    .user_aera2 {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
@@ -294,6 +304,13 @@ a {text-decoration: none;
                 width: 60px;
                 height: 40px;
                 background-color: red;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
             }
             .user_name, .user_ID {
                 height: 20px;
@@ -349,6 +366,125 @@ a {text-decoration: none;
 
             .user_aera_btm_Box2 a {
                 padding: 0px 10px;
+            }
+        }
+    }
+    .user_aera1 {
+        margin-top: 20px;
+    }
+    .user_aera2 {
+        margin-bottom: 50px;
+    }
+
+    .More_Reactions {
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+
+        .More_Reactions_tit {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+
+            .fa-chevron-circle-right {
+                color: $point-color;
+                margin-left: 10px;
+            }
+        }
+
+        .More_Reactions_side_tit {
+            display: flex;
+            align-items: center;
+
+            p {
+            font-size: 12px;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            color: #aaa;
+            }
+
+            p:nth-child(2) {
+                color: #777;
+                font-weight: bold;
+            }
+            
+        }
+        
+    }
+
+    .More_Reactions_Tap {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+
+        .Reactions_Tap_Menu {
+            position: absolute;
+            z-index: 1;
+            top: 10.6px;
+            left: 10px;
+            display: flex;
+            width: 250px;
+            height: 51px;
+            line-height: 53px;
+            text-align: center;
+            background-color: #eee;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            border-bottom: none;
+
+            p { 
+                width: 50%;
+                font-weight: bold;
+            }
+            p:nth-child(2) {
+                color: #777;
+                background-color: #bbb;
+            }
+        }
+
+        .Tap_list {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            margin-top: 50px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .Reactions_Tap_list2 {
+            display: none;
+        }
+        .Reactions_Tap_list1 {
+
+            li a {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 50px;
+                font-size: 14px;
+
+                p:first-child {
+                    width: 40px;
+                    text-align: center;
+                    line-height: 50px;
+                    background-color: #eee;
+                    border: 1px solid #000;
+                    border-left: none;
+                    border-right: none;
+                    box-sizing: border-box;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p:last-child {
+                    height: 50px;
+                }
             }
         }
     }
