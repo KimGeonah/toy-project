@@ -54,56 +54,79 @@ $point-font : 'Prata', serif;
 }
 .bottom_box {
     position: relative;
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0px 15px 15px 0px;
     box-sizing: border-box;
     border: 1px solid #aaa;
 
     .line {
-        width: 460px;
+        width: 95%;
+        margin-top: 30px;
         margin: 0 auto;
         height: 3px;
         border-bottom: 2px solid #ccc;
         box-sizing: border-box;
+    }
+    .line.first_line {
+        margin-top: 0px;
     }
 
     .title_all {
         position: absolute;
         top: 3px;
         left: 0;
-        width: 450px;
         height: 50px;
         line-height: 55px;
-        padding-left: 10px;
+        padding: 0px 10px 0px;
         background-color: yellow;
+        box-sizing: border-box;
     }
     .short_list {
-        margin-top: 50px;
         width: 100%;
-        height: 360px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: flex-end;
-        padding: 10px;
+        padding-top: 50px;
         box-sizing: border-box;
 
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .short_list_img1, .short_list_img2,
+        .short_list_img3, .short_list_img4 {
+            width: 50%;
+            height: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
         }
+        .short_list_img1, .short_list_img3 {
+            padding-right: 5px;
+        }
+        .short_list_img2, .short_list_img4 {
+            padding-left: 5px;
+        }
+
 
         .short_txt {
             font-weight: bold;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
     .Person_Issue {
         position: relative;
         width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
 
         .Person_Issue_img {
             display: flex;
@@ -114,6 +137,7 @@ $point-font : 'Prata', serif;
 
             .Person_Issue_img_box {
                 width: 40%;
+                cursor: pointer;
                 
                 img {
                     width: 100%;
@@ -123,8 +147,8 @@ $point-font : 'Prata', serif;
             }
 
             .Person_Issue_text {
+                position: relative;
                 width: 60%;
-                height: 255px;
                 background-color: #eee;
 
                 .Issue_text_list {
@@ -132,21 +156,67 @@ $point-font : 'Prata', serif;
                     padding: 10px;
                     height: 100%;
                     flex-wrap: wrap;
-                    align-content: center;
+                    align-content: flex-start;
 
                     li {
                         width: 100%;
-                        height: 40px;
-                        line-height: 40px;
+                        height: 30px;
+                        line-height: 30px;
                         // background-color: #aaa;
                         // border: 1px solid #000;
                         box-sizing: border-box;
                         font-weight: bold;
+                        display: block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 14px;
+                        text-overflow: ellipsis;
+                        cursor: pointer;
+                    }
+
+                    li.hidden_txt {
+                        width: 200px;
+                        height: 20px;
+                        line-height: 23px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        color: #aaa;
+                        font-size: 12px;
+                        font-weight: normal;
+                        text-align: right;
+                        padding-right: 5px;
                     }
                 }
             }
         }
     }
+
+    .Person_Year {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transform: translateY();
+
+        .Person_Year_img {
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .Person_Year_txt {
+            position: relative;
+            left: auto;
+            top: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
 }
 
 
