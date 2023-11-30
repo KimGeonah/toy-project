@@ -230,4 +230,82 @@ body {
   top: auto;
   text-align: center;
   font-weight: bold;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.bottom_box .user_aera1 {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.bottom_box .user_aera1 .user_aera_top {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 50px;
+  padding: 5px 0px;
+  box-sizing: border-box;
+}
+.bottom_box .user_aera1 .user_aera_top .user_aera_img {
+  width: 60px;
+  height: 40px;
+  background-color: red;
+}
+.bottom_box .user_aera1 .user_aera_top .user_name, .bottom_box .user_aera1 .user_aera_top .user_ID {
+  height: 20px;
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.bottom_box .user_aera1 .user_aera_top .user_ID {
+  color: #aaa;
+}
+.bottom_box .user_aera1 .user_txt {
+  padding: 10px 0px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bottom_box .user_aera1 .user_aera_btm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: #eee;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1,
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 {
+  display: flex;
+  height: 50px;
+  line-height: 53px;
+}
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 div, .bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 a,
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 div,
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 a {
+  color: #aaa;
+  padding: 0px 5px;
+  box-sizing: border-box;
+}
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 .btm_twiter_img,
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 .btm_twiter_img {
+  font-size: 16px;
+}
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box1 .btm_time,
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 .btm_time {
+  font-size: 12px;
+}
+.bottom_box .user_aera1 .user_aera_btm .user_aera_btm_Box2 a {
+  padding: 0px 10px;
 }/*# sourceMappingURL=style.css.map */
