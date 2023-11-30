@@ -20,25 +20,40 @@ body {
 }
 
 .header {
-  background-color: rgb(201, 198, 198);
   position: relative;
 }
 .header .title {
-  border: 1px solid #000;
   text-align: center;
   font-family: "Prata", serif;
   color: #CC6262;
   font-weight: 100;
+  font-size: 45px;
+  border: 1px solid #000;
 }
 .header .navbar_burger {
   position: absolute;
+  font-size: 40px;
+  margin-left: 10px;
+  color: #978D8D;
   top: 50%;
   transform: translate(0, -50%);
 }
 
 .search_box {
-  border: 1px solid #000;
   text-align: center;
+  margin: 20px auto 100px;
+  height: 40px;
+  border-radius: 10px;
+  border-radius: 20px;
+  background: #ECECEC;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.search_box .xi-search {
+  color: #978D8D;
 }
 
 .top_box {
