@@ -1,18 +1,32 @@
-* {padding: 0;
+* {
+    padding: 0;
     margin: 0;
 }
 
-body{ margin: auto 10px;}
-li {list-style: none; cursor: pointer;}
-a {text-decoration: none; cursor: pointer; color: #000;}
+body {
+    margin: auto 10px;
+}
 
-    
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+
 $point-color :#CC6262;
 $icon-color : #978D8D;
 
-$point-font : 'Prata', serif;
-$base-font : 'Vazirmatn', sans-serif;
-    
+$point-font : 'Prata',
+serif;
+$base-font : 'Vazirmatn',
+sans-serif;
+
 
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -21,11 +35,11 @@ $base-font : 'Vazirmatn', sans-serif;
 
 
 
-.header{
+.header {
     position: relative;
     margin-top: 20px;
 
-    .title{
+    .title {
         height: 60px;
         line-height: 60px;
         text-align: center;
@@ -37,19 +51,19 @@ $base-font : 'Vazirmatn', sans-serif;
 
     }
 
-    .navbar_burger{
+    .navbar_burger {
         position: absolute;
         font-size: 35px;
         padding-left: 10px;
         color: $icon-color;
         top: 50%;
-        transform: translate(0,-50%);
+        transform: translate(0, -50%);
     }
 }
 
 
 
-.search_box{
+.search_box {
     text-align: center;
     margin-top: 20px;
     height: 40px;
@@ -60,15 +74,17 @@ $base-font : 'Vazirmatn', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px; 
-    .xi-search{
-        color: $icon-color;
-    }
-    .search_title{
+    padding: 0 10px;
+
+    .xi-search {
         color: $icon-color;
     }
 
-    .search_btn{
+    .search_title {
+        color: $icon-color;
+    }
+
+    .search_btn {
         color: #fff;
         width: 50px;
         height: 30px;
@@ -81,29 +97,35 @@ $base-font : 'Vazirmatn', sans-serif;
 }
 
 
-.main_box{
+.main_box {
     margin-top: 20px;
     background: rgba(217, 217, 217, 0.25);
     display: flex;
-    .main{
+
+    .main {
         width: 50%;
         position: relative;
         display: flex;
-        .main_inner{
+
+        .main_inner {
             background-color: #fff;
+            width: 50%;
+            height: 40%;
             padding: 20px;
             text-align: center;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
-            .inner_text{
+            transform: translate(-50%, -50%);
+
+            .inner_text {
                 font-size: 11px;
                 color: rgba(0, 0, 0, 0.60);
                 letter-spacing: -1px;
                 margin-bottom: 5px;
             }
-            .inner_title{
+
+            .inner_title {
                 font-size: 35px;
                 font-weight: 900;
                 line-height: 1;
@@ -113,10 +135,11 @@ $base-font : 'Vazirmatn', sans-serif;
         }
     }
 
-    .main_img_box{
+    .main_img_box {
         width: 50%;
-        .main_img{
-            img{
+
+        .main_img {
+            img {
                 width: 100%;
                 height: auto;
                 display: block;
@@ -126,25 +149,47 @@ $base-font : 'Vazirmatn', sans-serif;
 }
 
 
-.article_box{
+.article_box {
     margin-top: 20px;
-    h1{
+
+    h1 {
         font-size: 36px;
     }
-    .italic{
+
+    .italic {
         font-style: italic;
     }
 }
 
 
-.article_list{
+.article_list {
     margin: 30px 0;
-    ul{
-        li{
+
+    ul {
+        li {
+
+            height: 20px;
+            margin-bottom: 10px;
+            text-indent: 5px;
+
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             word-break: break-all;
+
+            display: flex;
+            align-items: center;
+
+            .fa-circle {
+                width: 20px;
+                font-size: 5px;
+                text-align: center;
+            }
+            .fa-youtube, .fa-play-circle{
+                width: 20px;
+                font-size: 12px;
+            }
+
 
         }
     }
@@ -167,6 +212,7 @@ $base-font : 'Vazirmatn', sans-serif;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
+
 .bottom_box {
     position: relative;
     width: 100%;
@@ -182,6 +228,7 @@ $base-font : 'Vazirmatn', sans-serif;
         border-bottom: 2px solid #ccc;
         box-sizing: border-box;
     }
+
     .line.first_line {
         margin-top: 0px;
     }
@@ -197,6 +244,7 @@ $base-font : 'Vazirmatn', sans-serif;
         box-sizing: border-box;
         font-family: $base-font;
     }
+
     .short_list {
         width: 100%;
         display: flex;
@@ -209,8 +257,10 @@ $base-font : 'Vazirmatn', sans-serif;
         margin-top: 20px;
         font-family: $base-font;
 
-        .short_list_img1, .short_list_img2,
-        .short_list_img3, .short_list_img4 {
+        .short_list_img1,
+        .short_list_img2,
+        .short_list_img3,
+        .short_list_img4 {
             width: 50%;
             height: 50%;
             padding: 10px;
@@ -223,10 +273,14 @@ $base-font : 'Vazirmatn', sans-serif;
                 display: block;
             }
         }
-        .short_list_img1, .short_list_img3 {
+
+        .short_list_img1,
+        .short_list_img3 {
             padding-right: 5px;
         }
-        .short_list_img2, .short_list_img4 {
+
+        .short_list_img2,
+        .short_list_img4 {
             padding-left: 5px;
         }
 
@@ -263,7 +317,7 @@ $base-font : 'Vazirmatn', sans-serif;
             .Person_Issue_img_box {
                 width: 40%;
                 cursor: pointer;
-                
+
                 img {
                     width: 100%;
                     height: auto;
@@ -379,12 +433,15 @@ $base-font : 'Vazirmatn', sans-serif;
                     display: block;
                 }
             }
-            .user_name, .user_ID {
+
+            .user_name,
+            .user_ID {
                 height: 20px;
                 margin-left: 15px;
                 font-size: 12px;
                 line-height: 20px;
             }
+
             .user_ID {
                 color: #aaa;
             }
@@ -410,14 +467,15 @@ $base-font : 'Vazirmatn', sans-serif;
             padding: 0px 10px;
             box-sizing: border-box;
             margin-bottom: 15px;
-            
+
             .user_aera_btm_Box1,
             .user_aera_btm_Box2 {
                 display: flex;
                 height: 50px;
                 line-height: 53px;
 
-                div, a {
+                div,
+                a {
                     color: #aaa;
                     padding: 0px 5px;
                     box-sizing: border-box;
@@ -426,6 +484,7 @@ $base-font : 'Vazirmatn', sans-serif;
                 .btm_twiter_img {
                     font-size: 16px;
                 }
+
                 .btm_time {
                     font-size: 12px;
                 }
@@ -436,9 +495,11 @@ $base-font : 'Vazirmatn', sans-serif;
             }
         }
     }
+
     .user_aera1 {
         margin-top: 20px;
     }
+
     .user_aera2 {
         margin-bottom: 50px;
     }
@@ -469,19 +530,19 @@ $base-font : 'Vazirmatn', sans-serif;
             align-items: center;
 
             p {
-            font-size: 12px;
-            padding: 0px 10px;
-            box-sizing: border-box;
-            color: #aaa;
+                font-size: 12px;
+                padding: 0px 10px;
+                box-sizing: border-box;
+                color: #aaa;
             }
 
             p:nth-child(2) {
                 color: #777;
                 font-weight: bold;
             }
-            
+
         }
-        
+
     }
 
     .More_Reactions_Tap {
@@ -509,10 +570,11 @@ $base-font : 'Vazirmatn', sans-serif;
             border: 1px solid #000;
             border-bottom: none;
 
-            p { 
+            p {
                 width: 50%;
                 font-weight: bold;
             }
+
             p:nth-child(2) {
                 color: #777;
                 background-color: #bbb;
@@ -523,7 +585,11 @@ $base-font : 'Vazirmatn', sans-serif;
             width: 100%;
             position: relative;
 
-            .Reactions_Tap_list2 {display: none;} /* display:none */
+            .Reactions_Tap_list2 {
+                display: none;
+            }
+
+            /* display:none */
             .Tap_list {
                 width: 100%;
                 height: 330px;
@@ -534,7 +600,7 @@ $base-font : 'Vazirmatn', sans-serif;
                 top: 0px;
                 left: 0px;
                 padding: 10px;
-    
+
                 li a {
                     width: 100%;
                     display: flex;
@@ -543,7 +609,7 @@ $base-font : 'Vazirmatn', sans-serif;
                     flex-direction: row;
                     flex-wrap: nowrap;
                     justify-content: flex-start;
-    
+
                     p:first-child {
                         width: 40px;
                         text-align: center;
@@ -553,6 +619,7 @@ $base-font : 'Vazirmatn', sans-serif;
                         font-weight: bold;
                         border-bottom: 1px solid #aaa;
                     }
+
                     p:last-child {
                         display: flex;
                         align-items: center;
@@ -564,13 +631,14 @@ $base-font : 'Vazirmatn', sans-serif;
                         border-bottom: 1px solid #aaa;
                     }
                 }
+
                 li:last-child a {
                     p {
                         border-bottom: none;
                     }
                 }
             }
-            
+
         }
 
     }
@@ -587,7 +655,12 @@ $base-font : 'Vazirmatn', sans-serif;
         font-family: $base-font;
 
 
-        .Featured_box3, .Featured_box4 {display: none;} /* display:none */
+        .Featured_box3,
+        .Featured_box4 {
+            display: none;
+        }
+
+        /* display:none */
 
         .Featured_box {
             width: 50%;
@@ -595,7 +668,7 @@ $base-font : 'Vazirmatn', sans-serif;
             .Featured_img {
                 padding: 5px;
                 box-sizing: border-box;
-                
+
                 img {
                     width: 100%;
                     height: auto;
@@ -616,18 +689,22 @@ $base-font : 'Vazirmatn', sans-serif;
             }
         }
 
-        .Featured_box1, .Featured_box3 {
+        .Featured_box1,
+        .Featured_box3 {
             .Featured_img {
                 padding-left: 0px;
             }
         }
-        .Featured_box2, .Featured_box4 {
+
+        .Featured_box2,
+        .Featured_box4 {
             .Featured_img {
                 padding-right: 0px;
             }
         }
     }
 }
+
 footer {
     width: 100%;
     margin-top: 50px;
@@ -650,14 +727,14 @@ footer {
         text-shadow: 0px 4px 4px #bbb;
 
         p {
-        font-size: 45px;
-        font-family: $point-font;
-        color: $point-color;
-        padding-bottom: 20px;
-        box-sizing: border-box;
+            font-size: 45px;
+            font-family: $point-font;
+            color: $point-color;
+            padding-bottom: 20px;
+            box-sizing: border-box;
         }
     }
-    
+
     .footer_SNS_logo {
         display: flex;
         justify-content: space-evenly;
@@ -701,7 +778,7 @@ footer {
                 height: 35px;
                 box-sizing: border-box;
                 border-bottom: 1px solid #eee;
-                
+
                 a:hover {
                     color: $point-color;
                     font-weight: bold;
@@ -727,19 +804,23 @@ footer {
 
         }
     }
+
     .foot_bottom_txt1 {
         margin-bottom: 15px;
+
         span:nth-child(2) {
 
             span:nth-child(1),
             span:nth-child(3) {
                 color: $point-color;
             }
-            span:nth-child(2){
+
+            span:nth-child(2) {
                 margin: 0px 2px;
             }
         }
     }
+
     .foot_bottom_txt2 {
         span {
             display: flex;
@@ -757,11 +838,13 @@ footer {
                     display: flex;
                     justify-content: center;
                 }
+
                 span:nth-child(2) {
                     display: flex;
                     justify-content: center;
                 }
             }
+
             .foot_bottom_txt2 {
                 span {
                     justify-content: center;
@@ -770,4 +853,3 @@ footer {
         }
     }
 }
-
