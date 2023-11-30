@@ -47,9 +47,11 @@ a {text-decoration: none;
     }
 }
 
+
+
 .search_box{
     text-align: center;
-    margin: 20px auto 100px;
+    margin-top: 20px;
     height: 40px;
     border-radius: 10px;
     border-radius: 20px;
@@ -62,6 +64,30 @@ a {text-decoration: none;
     .xi-search{
         color: $icon-color;
     }
+}
+
+.main_box{
+    margin-top: 20px;
+}
+
+
+
+.article_box{
+    border: 1px solid #000;
+    margin-top: 20px;
+    h1{
+        font-size: 36px;
+    }
+    .italic{
+        font-style: italic;
+    }
+}
+
+
+.article_list{
+    border: 1px solid #000;
+    margin-top: 20px;
+
 }
 
 

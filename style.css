@@ -41,7 +41,7 @@ body {
 
 .search_box {
   text-align: center;
-  margin: 20px auto 100px;
+  margin-top: 20px;
   height: 40px;
   border-radius: 10px;
   border-radius: 20px;
@@ -54,6 +54,26 @@ body {
 }
 .search_box .xi-search {
   color: #978D8D;
+}
+
+.main_box {
+  margin-top: 20px;
+}
+
+.article_box {
+  border: 1px solid #000;
+  margin-top: 20px;
+}
+.article_box h1 {
+  font-size: 36px;
+}
+.article_box .italic {
+  font-style: italic;
+}
+
+.article_list {
+  border: 1px solid #000;
+  margin-top: 20px;
 }
 
 .top_box {
