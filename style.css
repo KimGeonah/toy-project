@@ -572,18 +572,28 @@ footer {
   width: 100%;
   margin-top: 50px;
 }
+footer .line {
+  width: 100%;
+  margin-top: 30px;
+  margin: 0 auto;
+  height: 3px;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
 footer .footer_logo_txt {
   width: 300px;
   height: 50px;
   margin: 0 auto;
   text-align: center;
   line-height: 50px;
-  text-shadow: 3px 3px 3px #999;
+  text-shadow: 0px 4px 4px #bbb;
 }
 footer .footer_logo_txt p {
-  font-size: 42px;
+  font-size: 45px;
   font-family: "Prata", serif;
   color: #CC6262;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 footer .footer_SNS_logo {
   display: flex;
@@ -592,6 +602,7 @@ footer .footer_SNS_logo {
   width: 300px;
   height: 50px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 footer .footer_SNS_logo .SNS_logo {
   display: flex;
@@ -602,10 +613,70 @@ footer .footer_SNS_logo .SNS_logo {
   border: 2px solid #CC6262;
   box-sizing: border-box;
   border-radius: 50%;
-  box-shadow: 3px 3px 3px #999;
+  box-shadow: 0px 4px 4px #bbb;
 }
 footer .footer_SNS_logo .SNS_logo img {
   width: 25px;
   height: 25px;
   display: block;
+}
+footer .footer_list {
+  margin-top: 20px;
+  display: flex;
+}
+footer .footer_list .footer_list_box {
+  width: 25%;
+  font-size: 10px;
+  margin-bottom: 25px;
+}
+footer .footer_list .footer_list_box li {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+footer .footer_list .footer_list_box li a:hover {
+  color: #CC6262;
+  font-weight: bold;
+}
+footer .footer_list .footer_list_box li:last-child {
+  border: none;
+}
+footer .foot_bottom {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+footer .foot_bottom .foot_bottom_txt span {
+  color: #aaa;
+  font-size: 10px;
+}
+footer .foot_bottom_txt1 {
+  margin-bottom: 15px;
+}
+footer .foot_bottom_txt1 span:nth-child(2) span:nth-child(1),
+footer .foot_bottom_txt1 span:nth-child(2) span:nth-child(3) {
+  color: #CC6262;
+}
+footer .foot_bottom_txt1 span:nth-child(2) span:nth-child(2) {
+  margin: 0px 2px;
+}
+footer .foot_bottom_txt2 span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 645px) {
+  footer .foot_bottom .foot_bottom_txt1 span:nth-child(1) {
+    display: flex;
+    justify-content: center;
+  }
+  footer .foot_bottom .foot_bottom_txt1 span:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  footer .foot_bottom .foot_bottom_txt2 span {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -635,18 +635,29 @@ footer {
     width: 100%;
     margin-top: 50px;
 
+    .line {
+        width: 100%;
+        margin-top: 30px;
+        margin: 0 auto;
+        height: 3px;
+        border-bottom: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+
     .footer_logo_txt {
         width: 300px;
         height: 50px;
         margin: 0 auto;
         text-align: center;
         line-height: 50px;
-        text-shadow: 3px 3px 3px #999;
+        text-shadow: 0px 4px 4px #bbb;
 
         p {
-        font-size: 42px;
+        font-size: 45px;
         font-family: $point-font;
         color: $point-color;
+        padding-bottom: 20px;
+        box-sizing: border-box;
         }
     }
     
@@ -657,6 +668,7 @@ footer {
         width: 300px;
         height: 50px;
         margin: 0 auto;
+        margin-bottom: 50px;
 
         .SNS_logo {
             display: flex;
@@ -667,7 +679,7 @@ footer {
             border: 2px solid #CC6262;
             box-sizing: border-box;
             border-radius: 50%;
-            box-shadow: 3px 3px 3px #999;
+            box-shadow: 0px 4px 4px #bbb;
 
             img {
                 width: 25px;
@@ -676,6 +688,89 @@ footer {
             }
         }
     }
+
+    .footer_list {
+        margin-top: 20px;
+        display: flex;
+
+        .footer_list_box {
+            width: 25%;
+            font-size: 10px;
+            margin-bottom: 25px;
+
+            li {
+                display: flex;
+                align-items: center;
+                height: 35px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #eee;
+                
+                a:hover {
+                    color: $point-color;
+                    font-weight: bold;
+                }
+            }
+
+            li:last-child {
+                border: none;
+            }
+
+        }
+    }
+
+    .foot_bottom {
+        margin-top: 25px;
+        margin-bottom: 50px;
+
+        .foot_bottom_txt {
+            span {
+                color: #aaa;
+                font-size: 10px;
+            }
+
+        }
+    }
+    .foot_bottom_txt1 {
+        margin-bottom: 15px;
+        span:nth-child(2) {
+
+            span:nth-child(1),
+            span:nth-child(3) {
+                color: $point-color;
+            }
+            span:nth-child(2){
+                margin: 0px 2px;
+            }
+        }
+    }
+    .foot_bottom_txt2 {
+        span {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 }
 
+@media all and (min-width: 645px) {
+    footer {
+        .foot_bottom {
+            .foot_bottom_txt1 {
+                span:nth-child(1) {
+                    display: flex;
+                    justify-content: center;
+                }
+                span:nth-child(2) {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .foot_bottom_txt2 {
+                span {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
 
