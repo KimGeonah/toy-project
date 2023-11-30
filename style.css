@@ -83,20 +83,19 @@ a {
   display: flex;
 }
 .main_box .main .main_inner {
-  width: 80%;
-  height: 150px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  text-align: center;
 }
 .main_box .main .main_inner .inner_text {
   font-size: 11px;
   color: rgba(0, 0, 0, 0.6);
   letter-spacing: -1px;
-  font-weight: bold;
+  margin-bottom: 5px;
 }
 .main_box .main .main_inner .inner_title {
   font-size: 35px;
