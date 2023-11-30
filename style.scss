@@ -24,19 +24,24 @@ $point-font : 'Prata', serif;
 
 .header{
     position: relative;
-    height: 60px;
+    margin-top: 20px;
+
     .title{
+        height: 60px;
+        line-height: 60px;
         text-align: center;
         font-family: $point-font;
         color: $point-color;
         font-weight: 100;
         font-size: 45px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     }
 
     .navbar_burger{
         position: absolute;
-        font-size: 40px;
-        margin-left: 10px;
+        font-size: 35px;
+        padding-left: 10px;
         color: $icon-color;
         top: 50%;
         transform: translate(0,-50%);
@@ -60,44 +65,21 @@ $point-font : 'Prata', serif;
     .xi-search{
         color: $icon-color;
     }
+    .search_title{
+        color: $icon-color;
+    }
+
+    .search_btn{
+        color: #fff;
+        width: 50px;
+        height: 30px;
+        font-size: 15px;
+        border: none;
+        border-radius: 18px;
+        background: rgba(204, 98, 98, 0.80);
+        backdrop-filter: blur(2px);
+    }
 }
-
-
-
-
-/* .main_box{
-    margin-top: 20px;
-    background: rgba(217, 217, 217, 0.25);
-    display: flex;
-    align-items: center;
-
-    .main_text{
-        background-color: yellow;
-        .main_inner{
-            background-color: #fff;
-            text-align: center;
-
-            .sub_title{
-                font-size: 11px;
-            }
-            .main_title{
-                font-size: 30px;
-                font-weight: bold;
-            }
-        }
-    }
-
-    .main_img{
-        background-color: yellowgreen;
-        img{
-            border: 10px solid #000;
-            min-width: 100%;
-            height: 200px;
-        }
-    }
-
-
-} */
 
 
 .main_box{
@@ -105,31 +87,50 @@ $point-font : 'Prata', serif;
     background: rgba(217, 217, 217, 0.25);
     display: flex;
 
-
     .main{
-        height: 200px;
-        border: 1px solid #000;
-        flex-grow: 1;
-        background-color: tan;
+
+        width: 50%;
+        position: relative;
+        display: flex;
         .main_inner{
-            border: 1px solid #000;
+            width: 80%;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
             background-color: #fff;
+            text-align: center;
+            .inner_text{
+                font-size: 11px;
+                color: rgba(0, 0, 0, 0.60);
+                letter-spacing: -1px;
+                font-weight: bold;
+            }
+            .inner_title{
+                font-size: 35px;
+                font-weight: 900;
+                line-height: 1;
+                letter-spacing: -2px;
+            }
+
         }
     }
 
-    .main_img{
-        border: 1px solid #000;
-        flex-grow: 1;
-
+    .main_img_box{
+        width: 50%;
+        .main_img{
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
     }
 }
 
 
-
-
-
 .article_box{
-    border: 1px solid #000;
     margin-top: 20px;
     h1{
         font-size: 36px;
@@ -141,8 +142,7 @@ $point-font : 'Prata', serif;
 
 
 .article_list{
-    border: 1px solid #000;
-    margin-top: 20px;
+    margin: 30px 0;
     ul{
         li{
             overflow: hidden;
