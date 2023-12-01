@@ -707,12 +707,6 @@ footer .foot_bottom_txt2 span {
 }
 
 @media all and (min-width: 645px) {
-  .header .title {
-    font-size: 70px;
-  }
-  .header .navbar_burger {
-    display: none;
-  }
   footer .foot_bottom .foot_bottom_txt1 span:nth-child(1) {
     display: flex;
     justify-content: center;
@@ -726,6 +720,12 @@ footer .foot_bottom_txt2 span {
   }
 }
 @media all and (min-width: 768px) {
+  .header .title {
+    font-size: 70px;
+  }
+  .header .navbar_burger {
+    display: none;
+  }
   .bottom_box {
     float: left;
   }

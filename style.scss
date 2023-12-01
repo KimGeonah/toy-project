@@ -846,18 +846,6 @@ footer {
 
 @media all and (min-width: 645px) {
 
-    .header{
-        .title{
-            font-size: 70px;
-        }
-        .navbar_burger{
-            display: none;
-        }
-    }
-
-
-
-
     footer {
         .foot_bottom {
             .foot_bottom_txt1 {
@@ -882,6 +870,16 @@ footer {
 }
 
 @media all and (min-width: 768px) {
+
+    .header{
+        .title{
+            font-size: 70px;
+        }
+        .navbar_burger{
+            display: none;
+        }
+    }
+
     .bottom_box {
         float: left;
 
