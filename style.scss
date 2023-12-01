@@ -110,7 +110,7 @@ a {
 
         .main_inner {
             background-color: #fff;
-            width: 50%;
+            width: 60%;
             height: 40%;
             padding: 20px;
             text-align: center;
@@ -350,21 +350,20 @@ a {
                         text-overflow: ellipsis;
                         cursor: pointer;
                     }
-
-                    li.hidden_txt {
-                        width: 200px;
-                        height: 20px;
-                        line-height: 23px;
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        color: #aaa;
-                        font-size: 12px;
-                        font-weight: normal;
-                        text-align: right;
-                        padding-right: 5px;
-                    }
                 }
+            }
+            p.Person_side_txt {
+                width: 200px;
+                height: 20px;
+                line-height: 23px;
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+                color: #aaa;
+                font-size: 12px;
+                font-weight: normal;
+                text-align: right;
+                padding-right: 5px;
             }
         }
     }
@@ -656,14 +655,15 @@ a {
 
 
     .Featured {
+        position: relative;
         display: flex;
-        margin-top: 25px;
         padding: 10px;
         box-sizing: border-box;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 25px;
         font-family: $base-font;
+        padding-top: 50px;
+        box-sizing: border-box;
 
 
         .Featured_box3,
@@ -875,6 +875,171 @@ footer {
             .foot_bottom_txt2 {
                 span {
                     justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .bottom_box {
+        float: left;
+
+        .line {
+            width: 98%;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        .first_line {
+            border: none;
+        }
+        .third_line {
+            display: none;
+        }
+        .fourth_line {
+/*          display: none; */
+            margin-bottom: 30px;
+        }
+
+
+        .Person_Issue {
+            width: 55%;
+            float: left;
+
+            .Person_Issue_img  {
+
+                p.Person_side_txt {
+                    bottom: -20px;
+                    left: 0;
+                    text-align: left;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+
+                    span:nth-child(2) {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .Person_Year {
+            position: relative;
+            width: 45%;
+            float: left;
+            padding-top: 50px;
+            box-sizing: border-box;
+
+            .Person_Year_img {
+                padding-top: 50px;
+                box-sizing: border-box;
+            }
+            
+            .Person_Year_txt  {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .user_wrap {
+            width: 55%;
+            float: left;
+
+            .user_aera1 {
+                margin-top: 0px;
+            }
+            .user_aera2 {
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .More_Reactions_wrap {
+            width: 45%;
+            float: left;
+
+            .More_Reactions_Tap {
+                height: 455px;
+
+                .Tap_list  {
+                    height: 385px;
+                    padding-top: 10px;
+                    box-sizing: border-box;
+                }
+
+                .Reactions_Tap_list_box  {
+                    .Tap_list  {
+                        li a {
+                            height: 60px;
+
+                            p:first-child {
+                                height: 60px;
+                                line-height: 60px;
+                            }
+                            p:last-child {
+                                height: 60px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .Featured {
+            .Featured_box {
+                width: 25%;
+            }
+            .Featured_box3, .Featured_box4 {
+                display: block;
+            }
+
+            .Featured_box1 {
+                .Featured_img {
+                    padding: 5px;
+                    // height: 140px;
+                    overflow: hidden;
+
+                }
+            } 
+            .Featured_box4 {
+                .Featured_img {
+                    padding: 5px;
+                    // height: 140px;
+                    overflow: hidden;
+                }
+            } 
+
+            .Featured_box3 {
+                .Featured_img {
+                    padding: 5px;
+                    // padding-left: 5px; 
+                    // height: 140px;
+                    overflow: hidden;
+                }
+            }
+    
+            .Featured_box2 {
+                .Featured_img {
+                    padding: 5px;
+                    // padding-right: 5px;
+                    // height: 140px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        float: left;
+        margin-top: 100px;
+
+        .footer_list {
+            .footer_list_box {
+                li {
+                    height: 25px;
                 }
             }
         }
