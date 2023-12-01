@@ -85,7 +85,7 @@ a {
 }
 .main_box .main .main_inner {
   background-color: #fff;
-  width: 50%;
+  width: 60%;
   height: 40%;
   padding: 20px;
   text-align: center;
@@ -282,12 +282,12 @@ a {
   text-overflow: ellipsis;
   cursor: pointer;
 }
-.bottom_box .Person_Issue .Person_Issue_img .Person_Issue_text .Issue_text_list li.hidden_txt {
+.bottom_box .Person_Issue .Person_Issue_img p.Person_side_txt {
   width: 200px;
   height: 20px;
   line-height: 23px;
   position: absolute;
-  right: 0;
+  right: 10px;
   bottom: 0;
   color: #aaa;
   font-size: 12px;
@@ -560,14 +560,15 @@ a {
   border-bottom: none;
 }
 .bottom_box .Featured {
+  position: relative;
   display: flex;
-  margin-top: 25px;
   padding: 10px;
   box-sizing: border-box;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 25px;
   font-family: "Vazirmatn", sans-serif;
+  padding-top: 50px;
+  box-sizing: border-box;
   /* display:none */
 }
 .bottom_box .Featured .Featured_box3,
@@ -717,5 +718,118 @@ footer .foot_bottom_txt2 span {
   }
   footer .foot_bottom .foot_bottom_txt2 span {
     justify-content: center;
+  }
+}
+@media all and (min-width: 768px) {
+  .bottom_box {
+    float: left;
+  }
+  .bottom_box .line {
+    width: 98%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .bottom_box .first_line {
+    border: none;
+  }
+  .bottom_box .third_line {
+    display: none;
+  }
+  .bottom_box .fourth_line {
+    /*          display: none; */
+    margin-bottom: 30px;
+  }
+  .bottom_box .Person_Issue {
+    width: 55%;
+    float: left;
+  }
+  .bottom_box .Person_Issue .Person_Issue_img p.Person_side_txt {
+    bottom: -20px;
+    left: 0;
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .bottom_box .Person_Issue .Person_Issue_img p.Person_side_txt span:nth-child(2) {
+    display: block;
+  }
+  .bottom_box .Person_Year {
+    position: relative;
+    width: 45%;
+    float: left;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .bottom_box .Person_Year .Person_Year_img {
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .bottom_box .Person_Year .Person_Year_txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .bottom_box .user_wrap {
+    width: 55%;
+    float: left;
+  }
+  .bottom_box .user_wrap .user_aera1 {
+    margin-top: 0px;
+  }
+  .bottom_box .user_wrap .user_aera2 {
+    margin-bottom: 0px;
+  }
+  .bottom_box .More_Reactions_wrap {
+    width: 45%;
+    float: left;
+  }
+  .bottom_box .More_Reactions_wrap .More_Reactions_Tap {
+    height: 455px;
+  }
+  .bottom_box .More_Reactions_wrap .More_Reactions_Tap .Tap_list {
+    height: 385px;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  .bottom_box .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a {
+    height: 60px;
+  }
+  .bottom_box .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a p:first-child {
+    height: 60px;
+    line-height: 60px;
+  }
+  .bottom_box .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a p:last-child {
+    height: 60px;
+  }
+  .bottom_box .Featured .Featured_box {
+    width: 25%;
+  }
+  .bottom_box .Featured .Featured_box3, .bottom_box .Featured .Featured_box4 {
+    display: block;
+  }
+  .bottom_box .Featured .Featured_box1 .Featured_img {
+    padding: 5px;
+    overflow: hidden;
+  }
+  .bottom_box .Featured .Featured_box4 .Featured_img {
+    padding: 5px;
+    overflow: hidden;
+  }
+  .bottom_box .Featured .Featured_box3 .Featured_img {
+    padding: 5px;
+    overflow: hidden;
+  }
+  .bottom_box .Featured .Featured_box2 .Featured_img {
+    padding: 5px;
+    overflow: hidden;
+  }
+  footer {
+    float: left;
+    margin-top: 100px;
+  }
+  footer .footer_list .footer_list_box li {
+    height: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
