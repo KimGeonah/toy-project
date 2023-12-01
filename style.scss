@@ -37,10 +37,6 @@ a {
 .header {
     margin-top: 20px;
 
-    .navbar_burger {
-        font-size: 35px;
-        color: $icon-color;
-    }
 
     .title {
         text-align: center;
@@ -54,6 +50,35 @@ a {
         }
     }
 
+
+
+
+
+}
+
+
+.navbar_box{
+
+
+    .navbar_mobile {
+        border: 1px solid #000;
+        font-size: 35px;
+        color: $icon-color;
+    }
+
+
+    .navbar_web{
+        ul{
+            display: flex;
+            li{
+                
+                &::after{
+                    content: "";
+                    border-right: 1px solid #000;
+                }
+            }
+        }
+    }
 
 
     .hr_solid{
@@ -163,39 +188,111 @@ a {
 }
 
 
-.article_list {
-    margin: 30px 0;
 
-    ul {
-        li {
+.main_list{
 
-            height: 20px;
-            margin-bottom: 10px;
-            text-indent: 5px;
-
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            word-break: break-all;
-
-            display: flex;
-            align-items: center;
-
-            .fa-circle {
-                width: 20px;
-                font-size: 5px;
-                text-align: center;
+    .article_list {
+        margin: 30px 0;
+    
+        ul {
+            li {
+    
+                height: 20px;
+                margin-bottom: 10px;
+                text-indent: 5px;
+    
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-break: break-all;
+    
+                display: flex;
+                align-items: center;
+    
+                .fa-circle {
+                    width: 20px;
+                    font-size: 5px;
+                    text-align: center;
+                }
+                .fa-youtube, .fa-play-circle{
+                    width: 20px;
+                    font-size: 12px;
+                }
+    
+    
             }
-            .fa-youtube, .fa-play-circle{
-                width: 20px;
-                font-size: 12px;
-            }
-
-
         }
+    
+    
     }
+    
 
+    
 
+    .short_list {
+        position: relative;
+    
+        .title_all {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            height: 50px;
+            line-height: 55px;
+            padding: 0px 10px 0px;
+            box-sizing: border-box;
+            font-family: $base-font;
+        }
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: flex-end;
+            padding-top: 50px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            font-family: $base-font;
+        
+            .short_list_img1,
+            .short_list_img2,
+            .short_list_img3,
+            .short_list_img4 {
+                width: 50%;
+                height: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        
+            .short_list_img1,
+            .short_list_img3 {
+                padding-right: 5px;
+            }
+        
+            .short_list_img2,
+            .short_list_img4 {
+                padding-left: 5px;
+            }
+        
+            .short_list_tit {
+                top: 23px;
+            }
+        
+        
+            .short_txt {
+                font-weight: bold;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
 }
 
 
@@ -844,18 +941,19 @@ footer {
     }
 }
 
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+
+
+
 @media all and (min-width: 645px) {
-
-    .header{
-        .title{
-            font-size: 70px;
-        }
-        .navbar_burger{
-            display: none;
-        }
-    }
-
-
 
 
     footer {
@@ -881,7 +979,35 @@ footer {
     }
 }
 
+
+
 @media all and (min-width: 768px) {
+
+
+    .header{
+        .title{
+            a{
+                font-size: 70px;
+            }
+        }
+    }
+    
+    .article_box{
+        h1{
+            font-size: 50px;
+        }
+    }
+
+
+
+    .main_list{
+        border: 1px solid #000;
+        display: flex;
+    }
+
+
+
+
     .bottom_box {
         float: left;
 
@@ -1045,3 +1171,6 @@ footer {
         }
     }
 }
+
+
+
