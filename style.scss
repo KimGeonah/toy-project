@@ -981,9 +981,20 @@ footer {
     }
   }
 
-  .article_box {
-    h1 {
-      font-size: 50px;
+  .article_box{
+    h1{
+        letter-spacing: -2px;
+        font-size: 47px;
+    }
+
+    p {
+        display: inline;
+        font-size: 14px;
+    }
+
+    .italic {
+        letter-spacing: -0.3px;
+        font-size: 14px;
     }
   }
 
@@ -1191,6 +1202,10 @@ footer {
 
 @media all and (min-width: 1024px) {
 
+    .wrap {
+    display: flex;
+    }
+
 
   .header_web,
   .navbar_web{
@@ -1341,10 +1356,97 @@ footer {
 
 
   .PC_left_aera {
-    display: flex;
-    width: 65%;
+      display: flex;
+      width: 65%;
+      flex-wrap: wrap;
+
+      .main_box {
+          width: 100%;
+      }
+
+      .article_box {
+          h1 {
+              font-size: 32px;
+          }
+
+          p {
+              display: inline;
+              font-size: 12px;
+          }
+
+          .italic {
+              display: inline;
+              font-size: 12px;
+          }
+      }
+
+      .main_list {
+          position: relative;
+          border: none;
+
+
+
+          .article_list {
+              width: 50%;
+
+              ul {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  flex-wrap: wrap;
+
+                  li {
+                      width: 100%;
+                      height: 25px;
+                      font-size: 14px;
+                      margin-bottom: 2px;
+
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      word-break: break-all;
+
+                  }
+              }
+          }
+
+          .short_list {
+              align-content: flex-start;
+
+              .short_list_img1,
+              .short_list_img2,
+              .short_list_img3,
+              .short_list_img4 {
+                  height: auto;
+              }
+          }
+
+      }
   }
-  .PC_right_aera {
-    width: 35%;
+
+  .PC_right_area {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 35%;
+
+      .Person_Issue {
+          width: 100%;
+
+          .Person_Issue_img {
+
+              p.Person_side_txt {}
+
+          }
+      }
   }
+
+}
+
+
+@media all and (min-width: 1280px) {
+    .wrap {
+        width: 1280px;
+        margin: 0 auto;
+    }
 }
