@@ -915,4 +915,13 @@ footer .foot_bottom_txt2 span {
   footer .footer_list .footer_list_box li {
     height: 25px;
   }
+}
+@media all and (min-width: 1024px) {
+  .PC_left_aera {
+    display: flex;
+    width: 65%;
+  }
+  .PC_right_aera {
+    width: 35%;
+  }
 }/*# sourceMappingURL=style.css.map */

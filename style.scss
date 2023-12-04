@@ -1185,3 +1185,16 @@ footer {
 
 
 
+
+
+
+@media all and (min-width: 1024px) {
+    .PC_left_aera {
+        display: flex;
+        width: 65%;
+    }
+    .PC_right_aera {
+        width: 35%;
+    }
+
+}
