@@ -25,6 +25,20 @@ a {
   color: #000;
 }
 
+.PC_ver {
+  display: none !important;  /* Featured PC 영역에만 노출 */
+}
+
+footer {        
+  .fifth_line {
+    display: block;
+  }
+  
+  .Featured {
+    display: flex;  /* Featured Mobile, Tablet 노출 */
+  }
+}
+
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 
@@ -548,6 +562,7 @@ a {
     .user_aera_btm {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
       height: 50px;
       background-color: #eee;
@@ -747,7 +762,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     font-family: $base-font;
-    padding-top: 50px;
+    margin-bottom: 100px;
     box-sizing: border-box;
 
     .Featured_tit  {
@@ -806,7 +821,6 @@ a {
 
 footer {
   width: 100%;
-  margin-top: 50px;
 
   .line {
     width: 100%;
@@ -1040,7 +1054,7 @@ footer {
 
 
   .bottom_box {
-        width: 35%;
+        width: 100%;
         float: left;
 
     .line {
@@ -1189,7 +1203,6 @@ footer {
 
   footer {
     float: left;
-    margin-top: 100px;
 
     .footer_list {
       .footer_list_box {
@@ -1439,6 +1452,10 @@ footer {
           }
 
       }
+
+      .PC_ver {
+        display: flex !important;
+      }
   }
 
   .bottom_box.PC_right_area {
@@ -1446,6 +1463,10 @@ footer {
       flex-direction: column;
       flex-wrap: nowrap;
       width: 35%;
+
+      .fourth_line {
+        margin-bottom: 0px;
+      }
 
       .Person_Issue {
           width: 100%;
@@ -1483,6 +1504,64 @@ footer {
           }
         }
       }
+
+      .user_wrap {
+        width: 100%;
+
+        .user_aera1,
+        .user_aera2 {
+
+          .user_txt {
+            font-size: 16px;
+            height: 95px;
+          }
+
+          .user_aera_btm {
+            height: 45px;
+            margin-bottom: 0px;
+          }
+
+        }
+      }
+
+      .More_Reactions_wrap {
+        width: 100%;
+
+        .More_Reactions_Tap {
+          .Reactions_Tap_list_box {
+            .Tap_list {
+              height: 290px;
+
+              li {
+                a {
+                  height: 45px;
+  
+                  p:first-child {
+                    height: 45px;
+                    line-height: 45px;
+                  }
+  
+                  p:last-child {
+                    height: 45px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+  }
+
+  footer {
+    width: 1024px;
+    margin: 0 auto;
+    float: none;
+
+
+    .Featured {
+      display: none;
+    }
   }
 
 }

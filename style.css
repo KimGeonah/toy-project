@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +18,17 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #000;
+}
+
+.PC_ver {
+  display: none !important; /* Featured PC 영역에만 노출 */
+}
+
+footer .fifth_line {
+  display: block;
+}
+footer .Featured {
+  display: flex; /* Featured Mobile, Tablet 노출 */
 }
 
 .header_web,
@@ -470,6 +482,7 @@ a {
 .bottom_box .user_aera2 .user_aera_btm {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 50px;
   background-color: #eee;
@@ -653,7 +666,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   font-family: "Vazirmatn", sans-serif;
-  padding-top: 50px;
+  margin-bottom: 100px;
   box-sizing: border-box;
   /* display:none */
 }
@@ -697,7 +710,6 @@ a {
 
 footer {
   width: 100%;
-  margin-top: 50px;
 }
 footer .line {
   width: 100%;
@@ -862,7 +874,7 @@ footer .foot_bottom_txt2 span {
     display: none;
   }
   .bottom_box {
-    width: 35%;
+    width: 100%;
     float: left;
   }
   .bottom_box .line {
@@ -968,7 +980,6 @@ footer .foot_bottom_txt2 span {
   }
   footer {
     float: left;
-    margin-top: 100px;
   }
   footer .footer_list .footer_list_box li {
     height: 25px;
@@ -1144,11 +1155,17 @@ footer .foot_bottom_txt2 span {
   .PC_left_aera .main_list .short_list .short_list_img4 {
     height: auto;
   }
+  .PC_left_aera .PC_ver {
+    display: flex !important;
+  }
   .bottom_box.PC_right_area {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 35%;
+  }
+  .bottom_box.PC_right_area .fourth_line {
+    margin-bottom: 0px;
   }
   .bottom_box.PC_right_area .Person_Issue {
     width: 100%;
@@ -1176,6 +1193,43 @@ footer .foot_bottom_txt2 span {
   }
   .bottom_box.PC_right_area .Person_Year .Person_Year_txt h3 {
     color: #cc6262;
+  }
+  .bottom_box.PC_right_area .user_wrap {
+    width: 100%;
+  }
+  .bottom_box.PC_right_area .user_wrap .user_aera1 .user_txt,
+  .bottom_box.PC_right_area .user_wrap .user_aera2 .user_txt {
+    font-size: 16px;
+    height: 95px;
+  }
+  .bottom_box.PC_right_area .user_wrap .user_aera1 .user_aera_btm,
+  .bottom_box.PC_right_area .user_wrap .user_aera2 .user_aera_btm {
+    height: 45px;
+    margin-bottom: 0px;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap {
+    width: 100%;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list {
+    height: 290px;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a {
+    height: 45px;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a p:first-child {
+    height: 45px;
+    line-height: 45px;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a p:last-child {
+    height: 45px;
+  }
+  footer {
+    width: 1024px;
+    margin: 0 auto;
+    float: none;
+  }
+  footer .Featured {
+    display: none;
   }
 }
 @media all and (min-width: 1280px) {
