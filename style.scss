@@ -111,8 +111,9 @@ a {
 
 .main_box {
   margin-top: 20px;
-  background: rgba(217, 217, 217, 0.25);
+  background: #eee;
   display: flex;
+  box-sizing: border-box;
 
   .main {
     width: 50%;
@@ -446,7 +447,7 @@ a {
         position: absolute;
         right: 10px;
         bottom: 0;
-        color: #aaa;
+        color: #555;
         font-size: 12px;
         font-weight: normal;
         text-align: right;
@@ -1359,14 +1360,30 @@ footer {
       display: flex;
       width: 65%;
       flex-wrap: wrap;
+      align-content: flex-start;
 
       .main_box {
           width: 100%;
+          margin-right: 10px;
+
+          .main {
+            .main_inner {
+
+              .inner_text {
+                margin-top: 20px;
+              }
+
+              .inner_title {
+                margin-top: 10px;
+                font-size: 50px;
+              }
+            }
+          }
       }
 
       .article_box {
           h1 {
-              font-size: 32px;
+              font-size: 38px;
           }
 
           p {
@@ -1424,7 +1441,7 @@ footer {
       }
   }
 
-  .PC_right_area {
+  .bottom_box.PC_right_area {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -1432,6 +1449,39 @@ footer {
 
       .Person_Issue {
           width: 100%;
+
+          .Person_Issue_img {
+
+            .Person_side_txt {
+              width: 100%;
+              bottom: -10px;
+
+              span:nth-child(1),
+              span:nth-child(2) {
+                display: inline;
+              }
+            }
+          }
+
+      }
+
+      .Person_Year {
+        width: 100%;
+        padding-top: 0px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        .Person_Year_txt {
+          width: 100%;
+          height: 30px;
+          line-height: 35px;
+          top: auto;
+          bottom: -25px;
+
+          h3 {
+            color: $point-color;
+          }
+        }
       }
   }
 
