@@ -1377,6 +1377,7 @@ footer .foot_bottom_txt2 span {
   }
 }
 @media all and (min-width: 1280px) {
+  .wrap_header,
   .wrap {
     width: 1280px;
     margin: 0 auto;
