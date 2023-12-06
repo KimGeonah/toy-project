@@ -122,9 +122,10 @@ footer .Featured {
   color: rgba(0, 0, 0, 0.6);
   letter-spacing: -1px;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 .main_box .main .main_inner .inner_title {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1;
   letter-spacing: -2px;
@@ -151,25 +152,32 @@ footer .Featured {
 .main_list .article_list {
   margin: 30px 0;
 }
+.main_list .article_list ul li:nth-child(1) .fa-circle {
+  width: 15px;
+  padding-right: 0px;
+}
 .main_list .article_list ul li {
   height: 20px;
   margin-bottom: 10px;
-  text-indent: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
-  display: flex;
-  align-items: center;
+  text-align: left;
 }
 .main_list .article_list ul li .fa-circle {
   width: 20px;
+  padding-right: 5px;
   font-size: 5px;
   text-align: center;
+  box-sizing: border-box;
 }
 .main_list .article_list ul li .fa-youtube, .main_list .article_list ul li .fa-play-circle {
   width: 20px;
   font-size: 12px;
+  text-align: center;
+  padding-right: 5px;
+  box-sizing: border-box;
 }
 .main_list .short_list {
   position: relative;
@@ -1142,6 +1150,9 @@ footer .foot_bottom_txt2 span {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .PC_left_aera .main_list .article_list ul li:nth-child(1) .fa-circle {
+    margin-left: -2px;
   }
   .PC_left_aera .main_list .article_list ul li {
     width: 100%;
