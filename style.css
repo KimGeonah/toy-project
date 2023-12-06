@@ -1148,5 +1148,7 @@ footer .foot_bottom_txt2 span {
   .wrap {
     width: 1280px;
     margin: 0 auto;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */
