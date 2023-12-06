@@ -33,7 +33,7 @@ footer {
   .fifth_line {
     display: block;
   }
-  
+
   .Featured {
     display: flex;  /* Featured Mobile, Tablet 노출 */
   }
@@ -537,7 +537,7 @@ footer {
     }
 
     .user_txt {
-      height: 130px;
+      height: 125px;
       padding: 10px 0px;
       box-sizing: border-box;
       font-weight: bold;
@@ -690,7 +690,7 @@ footer {
       /* display:none */
       .Tap_list {
         width: 100%;
-        height: 330px;
+        height: 315px;
         margin-top: 50px;
         border: 1px solid #000;
         box-sizing: border-box;
@@ -715,7 +715,7 @@ footer {
             box-sizing: border-box;
             font-size: 20px;
             font-weight: bold;
-            border-bottom: 1px solid #aaa;
+            border-bottom: 1px solid #ddd;
           }
 
           p:last-child {
@@ -726,7 +726,7 @@ footer {
             padding: 9px;
             box-sizing: border-box;
             font-size: 12px;
-            border-bottom: 1px solid #aaa;
+            border-bottom: 1px solid #ddd;
           }
         }
 
@@ -973,7 +973,7 @@ footer {
 
 @media all and (min-width: 768px) {
 
-  .header_web{
+  .header_web {
     display: none;
   }
 
@@ -985,61 +985,75 @@ footer {
     }
   }
 
-  .article_box{
-    h1{
-        letter-spacing: -2px;
-        font-size: 47px;
+  .article_box {
+    h1 {
+      letter-spacing: -2px;
+      font-size: 47px;
     }
 
     p {
-        display: inline;
-        font-size: 14px;
+      display: inline;
+      font-size: 14px;
     }
 
     .italic {
-        letter-spacing: -0.3px;
-        font-size: 14px;
+      letter-spacing: -0.3px;
+      font-size: 14px;
+    }
+  }
+
+  .main_box {
+    .main {
+      .main_inner {
+        .inner_text {
+          margin-top: 30px;
+          margin-bottom: 10px;
+        }
+        .inner_title {
+          font-size: 55px;
+        }
+      }
     }
   }
 
 
 
-    .main_list{
-        display: flex;
+  .main_list {
+    display: flex;
 
-        .article_list {
+    .article_list {
 
-            ul {
-                padding-top: 5px;
-                box-sizing: border-box;
+      ul {
+        padding-top: 5px;
+        box-sizing: border-box;
 
-                li {
-                    height: 18px;
-                    font-size: 14px;
-                }
-            }
+        li {
+          height: 18px;
+          font-size: 14px;
         }
-
-        .short_list  {
-            height: 100%;
-
-            .short_list_img1, .short_list_img2,
-            .short_list_img3, .short_list_img4 {
-                height: 41%;
-            }
-
-            .short_list_tit {
-                top: 13px;
-            }
-
-        }
-
-        .line.second_line {
-            display: none;
-        }
+      }
     }
 
+    .short_list {
+      height: 100%;
 
+      .short_list_img1,
+      .short_list_img2,
+      .short_list_img3,
+      .short_list_img4 {
+        height: 41%;
+      }
+
+      .short_list_tit {
+        top: 13px;
+      }
+
+    }
+
+    .line.second_line {
+      display: none;
+    }
+  }
 
 
   .bottom_box {
@@ -1121,7 +1135,7 @@ footer {
         height: 455px;
 
         .Tap_list {
-          height: 385px;
+          height: 375px;
           padding-top: 10px;
           box-sizing: border-box;
         }
@@ -1367,6 +1381,8 @@ footer {
       width: 65%;
       flex-wrap: wrap;
       align-content: flex-start;
+      padding-right: 10px;
+      border-right: 1px solid #ccc;
 
       .main_box {
           width: 100%;
@@ -1376,12 +1392,12 @@ footer {
             .main_inner {
 
               .inner_text {
-                margin-top: 20px;
+                margin-top: 40px;
               }
 
               .inner_title {
                 margin-top: 10px;
-                font-size: 50px;
+                font-size: 65px;
               }
             }
           }
@@ -1389,7 +1405,7 @@ footer {
 
       .article_box {
           h1 {
-              font-size: 38px;
+              font-size: 50px;
           }
 
           p {
@@ -1411,6 +1427,7 @@ footer {
 
           .article_list {
               width: 50%;
+              
 
               ul {
                   width: 100%;
@@ -1418,17 +1435,22 @@ footer {
                   flex-direction: column;
                   flex-wrap: wrap;
 
+
+
                   li {
                       width: 100%;
+                      display: block;
                       height: 25px;
                       font-size: 14px;
                       margin-bottom: 2px;
-
-                      overflow: hidden;
                       white-space: nowrap;
                       text-overflow: ellipsis;
-                      word-break: break-all;
-
+                      overflow: hidden;
+                      
+                       .fa-circle, .fa-youtube, .fa-play-circle  {
+                        position: relative;
+                        width: 20px;
+                      }
                   }
               }
           }
@@ -1448,6 +1470,17 @@ footer {
 
       .PC_ver {
         display: flex !important;
+        padding-top: 0px;
+        margin-bottom: 39px;
+
+        
+
+        .Featured_tit {
+          margin-bottom: 0px;
+          padding-left: 5px;
+          box-sizing: border-box;
+        }
+
       }
   }
 
@@ -1456,15 +1489,24 @@ footer {
       flex-direction: column;
       flex-wrap: nowrap;
       width: 35%;
+      padding-left: 10px;
+      box-sizing: border-box;
 
-      .fourth_line {
-        margin-bottom: 0px;
+      .first_line {
+        display: none;
       }
 
       .Person_Issue {
           width: 100%;
+          padding-top: 0px;
+          margin-bottom: 30px;
+
+          .title_all {
+            top: -16px;
+          }
 
           .Person_Issue_img {
+            padding-top: 35px;
 
             .Person_side_txt {
               width: 100%;
@@ -1483,7 +1525,7 @@ footer {
         width: 100%;
         padding-top: 0px;
         margin-top: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
         .Person_Year_txt {
           width: 100%;
@@ -1500,6 +1542,7 @@ footer {
 
       .user_wrap {
         width: 100%;
+        margin-top: 15px;
 
         .user_aera1,
         .user_aera2 {
@@ -1519,8 +1562,16 @@ footer {
 
       .More_Reactions_wrap {
         width: 100%;
+        height: 415px;
+        
+        .More_Reactions {
+          margin-bottom: 10px;
+          margin-top: 25px;
+        }
 
         .More_Reactions_Tap {
+          height: 0px;
+
           .Reactions_Tap_list_box {
             .Tap_list {
               height: 290px;
@@ -1547,9 +1598,13 @@ footer {
   }
 
   footer {
-    width: 1024px;
-    margin: 0 auto;
+    width: 1280px;
+    margin: 100px auto 0px;
     float: none;
+
+    .fifth_line {
+      display: none;
+    }
 
 
     .Featured {
@@ -1564,7 +1619,6 @@ footer {
     .wrap {
         width: 1280px;
         margin: 0 auto;
-        border: 1px solid #aaa;
         box-sizing: border-box;
     }
 

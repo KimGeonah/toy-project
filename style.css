@@ -445,7 +445,7 @@ footer .Featured {
 }
 .bottom_box .user_aera1 .user_txt,
 .bottom_box .user_aera2 .user_txt {
-  height: 130px;
+  height: 125px;
   padding: 10px 0px;
   box-sizing: border-box;
   font-weight: bold;
@@ -594,7 +594,7 @@ footer .Featured {
 }
 .bottom_box .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list {
   width: 100%;
-  height: 330px;
+  height: 315px;
   margin-top: 50px;
   border: 1px solid #000;
   box-sizing: border-box;
@@ -619,7 +619,7 @@ footer .Featured {
   box-sizing: border-box;
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
 }
 .bottom_box .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li a p:last-child {
   display: flex;
@@ -629,7 +629,7 @@ footer .Featured {
   padding: 9px;
   box-sizing: border-box;
   font-size: 12px;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
 }
 .bottom_box .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list li:last-child a p {
   border-bottom: none;
@@ -826,6 +826,13 @@ footer .foot_bottom_txt2 span {
     letter-spacing: -0.3px;
     font-size: 14px;
   }
+  .main_box .main .main_inner .inner_text {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .main_box .main .main_inner .inner_title {
+    font-size: 55px;
+  }
   .main_list {
     display: flex;
   }
@@ -840,8 +847,10 @@ footer .foot_bottom_txt2 span {
   .main_list .short_list {
     height: 100%;
   }
-  .main_list .short_list .short_list_img1, .main_list .short_list .short_list_img2,
-  .main_list .short_list .short_list_img3, .main_list .short_list .short_list_img4 {
+  .main_list .short_list .short_list_img1,
+  .main_list .short_list .short_list_img2,
+  .main_list .short_list .short_list_img3,
+  .main_list .short_list .short_list_img4 {
     height: 41%;
   }
   .main_list .short_list .short_list_tit {
@@ -919,7 +928,7 @@ footer .foot_bottom_txt2 span {
     height: 455px;
   }
   .bottom_box .More_Reactions_wrap .More_Reactions_Tap .Tap_list {
-    height: 385px;
+    height: 375px;
     padding-top: 10px;
     box-sizing: border-box;
   }
@@ -1080,20 +1089,22 @@ footer .foot_bottom_txt2 span {
     width: 65%;
     flex-wrap: wrap;
     align-content: flex-start;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
   }
   .PC_left_aera .main_box {
     width: 100%;
     margin-right: 10px;
   }
   .PC_left_aera .main_box .main .main_inner .inner_text {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .PC_left_aera .main_box .main .main_inner .inner_title {
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 65px;
   }
   .PC_left_aera .article_box h1 {
-    font-size: 38px;
+    font-size: 50px;
   }
   .PC_left_aera .article_box p {
     display: inline;
@@ -1118,13 +1129,17 @@ footer .foot_bottom_txt2 span {
   }
   .PC_left_aera .main_list .article_list ul li {
     width: 100%;
+    display: block;
     height: 25px;
     font-size: 14px;
     margin-bottom: 2px;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    word-break: break-all;
+    overflow: hidden;
+  }
+  .PC_left_aera .main_list .article_list ul li .fa-circle, .PC_left_aera .main_list .article_list ul li .fa-youtube, .PC_left_aera .main_list .article_list ul li .fa-play-circle {
+    position: relative;
+    width: 20px;
   }
   .PC_left_aera .main_list .short_list {
     align-content: flex-start;
@@ -1137,18 +1152,35 @@ footer .foot_bottom_txt2 span {
   }
   .PC_left_aera .PC_ver {
     display: flex !important;
+    padding-top: 0px;
+    margin-bottom: 39px;
+  }
+  .PC_left_aera .PC_ver .Featured_tit {
+    margin-bottom: 0px;
+    padding-left: 5px;
+    box-sizing: border-box;
   }
   .bottom_box.PC_right_area {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 35%;
+    padding-left: 10px;
+    box-sizing: border-box;
   }
-  .bottom_box.PC_right_area .fourth_line {
-    margin-bottom: 0px;
+  .bottom_box.PC_right_area .first_line {
+    display: none;
   }
   .bottom_box.PC_right_area .Person_Issue {
     width: 100%;
+    padding-top: 0px;
+    margin-bottom: 30px;
+  }
+  .bottom_box.PC_right_area .Person_Issue .title_all {
+    top: -16px;
+  }
+  .bottom_box.PC_right_area .Person_Issue .Person_Issue_img {
+    padding-top: 35px;
   }
   .bottom_box.PC_right_area .Person_Issue .Person_Issue_img .Person_side_txt {
     width: 100%;
@@ -1162,7 +1194,7 @@ footer .foot_bottom_txt2 span {
     width: 100%;
     padding-top: 0px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .bottom_box.PC_right_area .Person_Year .Person_Year_txt {
     width: 100%;
@@ -1176,6 +1208,7 @@ footer .foot_bottom_txt2 span {
   }
   .bottom_box.PC_right_area .user_wrap {
     width: 100%;
+    margin-top: 15px;
   }
   .bottom_box.PC_right_area .user_wrap .user_aera1 .user_txt,
   .bottom_box.PC_right_area .user_wrap .user_aera2 .user_txt {
@@ -1189,6 +1222,14 @@ footer .foot_bottom_txt2 span {
   }
   .bottom_box.PC_right_area .More_Reactions_wrap {
     width: 100%;
+    height: 415px;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions {
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+  .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions_Tap {
+    height: 0px;
   }
   .bottom_box.PC_right_area .More_Reactions_wrap .More_Reactions_Tap .Reactions_Tap_list_box .Tap_list {
     height: 290px;
@@ -1204,9 +1245,12 @@ footer .foot_bottom_txt2 span {
     height: 45px;
   }
   footer {
-    width: 1024px;
-    margin: 0 auto;
+    width: 1280px;
+    margin: 100px auto 0px;
     float: none;
+  }
+  footer .fifth_line {
+    display: none;
   }
   footer .Featured {
     display: none;
@@ -1216,7 +1260,6 @@ footer .foot_bottom_txt2 span {
   .wrap {
     width: 1280px;
     margin: 0 auto;
-    border: 1px solid #aaa;
     box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */
