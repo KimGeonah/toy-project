@@ -1432,12 +1432,6 @@ footer {
 
       .Person_Issue {
           width: 100%;
-
-          .Person_Issue_img {
-
-              p.Person_side_txt {}
-
-          }
       }
   }
 
@@ -1448,5 +1442,9 @@ footer {
     .wrap {
         width: 1280px;
         margin: 0 auto;
+        border: 1px solid #aaa;
+        box-sizing: border-box;
     }
+
+    
 }
