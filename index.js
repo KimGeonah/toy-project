@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
   TapMenu.style.backgroundColor = 'blue'
 
 
+  TapMenu.forEach(function() {
+    
+  })
+
+
   TapMenu.forEach((p, i) => {
     p[i].addEventListener('click', function() {
       for(let i = 0; TapMenu.length; i++) {
