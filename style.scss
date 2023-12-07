@@ -1394,14 +1394,7 @@ footer {
       .top_lnb{
         ul{
           display: flex;
-          li{
-            
-            &::after{
-              content: "";
-              border-right: 1px solid $icon-color;
-              margin: 0 10px;
-            }
-          }
+
         }
       }
   
